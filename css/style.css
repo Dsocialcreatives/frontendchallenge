@@ -1,0 +1,150 @@
+html {
+  --softBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --veryDarkBlueMain: hsl(217, 54%, 11%);
+  --veryDarkBlueCard: hsl(216, 50%, 16%);
+  --veryDarkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+  ;
+}
+
+body {
+  background-color: var(--veryDarkBlueMain);
+}
+
+main {
+  background-color: var(--veryDarkBlueCard);
+  margin-bottom: 10px;
+}
+
+.container-title {
+  color: var(--white);
+  margin-left: 24px;
+  font-weight: 400;
+}
+
+.title-text span {
+  color: var(--softBlue);
+  text-align: center;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.title-text {
+  margin-left: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.container-image::after{
+  background-color: var(--Cyan);
+}
+.container-eth {
+  color: var(--Cyan);
+  font-weight: 400;
+}
+
+.container-clock {
+  color: var(--softBlue);
+  font-weight: 300;
+}
+
+.second-card {
+  display: flex;
+  border-bottom: solid 0.1px var(--veryDarkBlueLine);
+  justify-content: space-between;
+  width: 85%;
+  margin-left: 24px;
+  padding-bottom: 15px;
+}
+
+.avatar-container {
+  width: 11%;
+  margin-left: 25px;
+}
+
+.third-card {
+  display: flex;
+  margin-top: 10px;
+  width: 85%;
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+
+.third-card p {
+  margin-left: 13px;
+  margin-top: 5px;
+  color: var(--softBlue);
+}
+
+.third-card span {
+  color: var(--white);
+  font-weight: 300;
+}
+
+.avatar-container img {
+  max-width: 70%;
+  border-radius: 50%;
+  border: solid 2px var(--white);
+}
+
+@media only screen and (max-width:1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 22%;
+    margin-top: 40px;
+    border-radius: 15px;
+  }
+
+  .container-img {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .container-img img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .container-title {
+    margin: 20px auto;
+    padding-left: 20px;
+  }
+
+  .title-text span {
+    padding-right: 35px;
+  }
+}
+  @media only screen and (max-width:375px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main {
+      width: 85%;
+      margin-top: 50px;
+      border-radius: 15px;
+    }
+}
+    .container-img {
+      width: 80%;
+    margin: 10px auto;
+    }
+
+    .container-img img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .container-title {
+      margin-top: 20px;
+    }
+
+  }
